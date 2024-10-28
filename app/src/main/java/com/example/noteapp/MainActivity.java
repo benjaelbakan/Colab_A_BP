@@ -8,10 +8,10 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity {
     int numero;
 
-    // Variable String
+    // Una variable String que creó el benja
     String Hola;
 
-    // Crear un ArrayList
+    // Crear un ArrayList donde guardar las notas
     ArrayList<String> listaNotas = new ArrayList<>();
 
     @Override
