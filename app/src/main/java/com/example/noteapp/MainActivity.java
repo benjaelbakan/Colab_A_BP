@@ -8,6 +8,7 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity {
     int numero;
 
+    // Variable String
     String Hola;
 
     // Crear un ArrayList donde guardar las notas
