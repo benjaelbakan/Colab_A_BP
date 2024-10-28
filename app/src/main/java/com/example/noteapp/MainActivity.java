@@ -11,7 +11,7 @@ public class MainActivity extends AppCompatActivity {
     // Una variable String que creó el benjaa
     String Hola;
 
-    // Crear un ArrayList donde guardar las notas
+    // Crear un ArrayList donde guardar las nota
     ArrayList<String> listaNotas = new ArrayList<>();
 
     @Override
