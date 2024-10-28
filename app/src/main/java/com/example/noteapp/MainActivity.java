@@ -3,11 +3,16 @@ package com.example.noteapp;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import java.util.ArrayList;
+
 public class MainActivity extends AppCompatActivity {
     int numero;
 
     // Variable String
     String Hola;
+
+    // Crear un ArrayList
+    ArrayList<String> listaNotas = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
