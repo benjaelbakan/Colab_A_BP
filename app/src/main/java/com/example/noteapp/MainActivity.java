@@ -8,7 +8,7 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity {
     int numero;
 
-    // Una variable String que creó el benj
+    // Una variable String que creó el benjaa
     String Hola;
 
     // Crear un ArrayList donde guardar las notas
