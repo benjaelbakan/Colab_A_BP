@@ -6,6 +6,7 @@ import android.os.Bundle;
 public class MainActivity extends AppCompatActivity {
     int numero;
 
+    // Variable String
     String Hola;
 
     @Override
