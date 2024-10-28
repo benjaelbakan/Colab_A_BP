@@ -27,6 +27,14 @@
             android:textAlignment="center"
             android:textColor="#000000"
             android:textSize="34sp" />
+
+        <EditText
+            android:id="@+id/txtIngresarNotas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Ingrese su Nota"
+            android:inputType="textPersonName" />
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
