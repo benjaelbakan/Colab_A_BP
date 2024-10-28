@@ -11,15 +11,12 @@ public class MainActivity extends AppCompatActivity {
     // Variable String
     String Hola;
 
-    // Crear un ArrayList donde guardar las notas
+    // Crear un ArrayList
     ArrayList<String> listaNotas = new ArrayList<>();
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
-
-
 }
