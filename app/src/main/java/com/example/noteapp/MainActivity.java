@@ -35,11 +35,10 @@ public class MainActivity extends AppCompatActivity {
 
         adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_single_choice, listaNotas);
         listViewNotas.setAdapter(adapter);
-        listViewNotas.setChoiceMode(ListView.CHOICE_MODE_SINGLE); // Set choice mode
+        listViewNotas.setChoiceMode(ListView.CHOICE_MODE_SINGLE);
 
-        // Handle the click event on the ListView items
         listViewNotas.setOnItemClickListener((parent, view, position, id) -> {
-            selectedPosition = position; // Update the selected position
+            selectedPosition = position;
         });
 
         btnGuardar.setOnClickListener(new View.OnClickListener() {
@@ -49,13 +48,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        // Handle delete button click
+        // Click eliminar -> reiniciar seleccion -> funka
         btnEliminar.setOnClickListener(v -> {
             if (selectedPosition != ListView.INVALID_POSITION) {
                 listaNotas.remove(selectedPosition);
                 adapter.notifyDataSetChanged();
-                listViewNotas.clearChoices(); // Clear selection if desired
-                selectedPosition = ListView.INVALID_POSITION; // Reset selected position
+                listViewNotas.clearChoices();
+                selectedPosition = ListView.INVALID_POSITION;
                 Toast.makeText(MainActivity.this, "Nota eliminada", Toast.LENGTH_SHORT).show();
             } else {
                 Toast.makeText(MainActivity.this, "Seleccione una nota para eliminar", Toast.LENGTH_SHORT).show();
