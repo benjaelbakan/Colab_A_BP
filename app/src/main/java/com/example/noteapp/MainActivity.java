@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     Button btnGuardar, btnEliminar;
     ListView listViewNotas;
     ArrayAdapter<String> adapter;
-    int selectedPosition = ListView.INVALID_POSITION; // To track the selected item
+    int selectedPosition = ListView.INVALID_POSITION;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
 
         notas = findViewById(R.id.txtIngresarNotas);
         btnGuardar = findViewById(R.id.btnGuardar);
-        btnEliminar = findViewById(R.id.btnEliminar); // Initialize delete button
+        btnEliminar = findViewById(R.id.btnEliminar);
         listViewNotas = findViewById(R.id.listview);
 
         adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_single_choice, listaNotas);
