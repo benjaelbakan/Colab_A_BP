@@ -7,53 +7,60 @@
     android:background="#303F9F"
     tools:context=".MainActivity">
 
-    <LinearLayout
-        android:layout_width="371dp"
-        android:layout_height="635dp"
+    <ScrollView
+        android:layout_width="367dp"
+        android:layout_height="662dp"
         android:background="#FFFFFF"
-        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.516"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.489">
+        app:layout_constraintTop_toTopOf="parent">
 
-        <TextView
-            android:id="@+id/textView"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Redacte su nota:"
-            android:textAlignment="center"
-            android:textColor="#000000"
-            android:textSize="34sp" />
+            android:orientation="vertical">
 
-        <EditText
-            android:id="@+id/txtIngresarNotas"
-            android:layout_width="match_parent"
-            android:layout_height="79dp"
-            android:ems="10"
-            android:hint="Ingrese su Nota"
-            android:inputType="textPersonName" />
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Redacte su nota:"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="34sp" />
 
-        <Button
-            android:id="@+id/btnGuardar"
-            android:layout_width="match_parent"
-            android:layout_height="94dp"
-            android:background="#92E64A19"
-            android:text="Guardar nota"
-            android:textColor="#000000"
-            android:textSize="24sp" />
+            <EditText
+                android:id="@+id/txtIngresarNotas"
+                android:layout_width="match_parent"
+                android:layout_height="79dp"
+                android:ems="10"
+                android:hint="Ingrese su Nota"
+                android:inputType="textPersonName" />
 
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Ver notas:"
-            android:textAlignment="center"
-            android:textColor="#000000"
-            android:textSize="34sp" />
+            <Button
+                android:id="@+id/btnGuardar"
+                android:layout_width="match_parent"
+                android:layout_height="94dp"
+                android:background="#92E64A19"
+                android:text="Guardar nota"
+                android:textColor="#000000"
+                android:textSize="24sp" />
 
-    </LinearLayout>
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ver notas:"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="34sp" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/vistaNotas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
 
 </android.support.constraint.ConstraintLayout>
